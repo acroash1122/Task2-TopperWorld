@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+    <link rel="stylesheet" href="Task2.css"> 
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="acontainer">
             <h1>Your Name</h1>
             <nav>
                 <ul>
@@ -25,7 +25,7 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="about-content">
-                <p>Brief bio or description about yourself. Highlight skills and expertise.</p>
+                <p>I'm Muhammad Ahsan, a passionate Web developer dedicated to crafting immersive digital experiences. With a background in Computer Science, I specialize in Software Engineering. My approach combines creativity with strategic thinking to deliver designs that are both visually compelling and functional. I thrive on challenges and am committed to continuous learning to stay at the forefront of digital innovation. Let's collaborate and create something extraordinary together!.</p>
             </div>
         </div>
     </section>
@@ -35,43 +35,65 @@
             <h2>Resume</h2>
             <div class="resume-content">
                 <!-- Place your resume content here, like a PDF link or embedded document -->
-                <p>Download my resume <a href="#">here</a>.</p>
+                <p>Download my resume <a href="Resume(Ahsan).pdf">here</a>.</p>
             </div>
         </div>
     </section>
 
     <section id="projects">
-        <div class="container">
+        <div class="portfolio">
             <h2>Projects</h2>
             <div class="project">
-                <h3>Project Title</h3>
-                <p>Description of the project. Use images, links, or additional details.</p>
+                <a href="https://github.com/acroash1122/Marks-calculation-system-.git" target="_blank">
+                    <img src="WhatsApp Image 2024-06-20 at 2.14.23 PM.jpeg" alt="Marks Calculation System">
+                </a>
+                <h3>Marks Calculation System</h3>
+                <p>Developing a Java-based student portal to streamline the process of checking semester marks for individual students and automating the calculation of their cumulative grade point average (CGPA).</p>
             </div>
-            <!-- Repeat project sections as needed -->
+            <div class="project">
+                <a href="https://github.com/acroash1122/Smart-Watering-System-.git" target="_blank">
+                    <img src="WhatsApp Image 2024-06-20 at 3.15.48 PM.jpeg" alt="Another Project">
+                </a>
+                <h3>Smart Watering System</h3>
+                <p>The smart irrigation system, powered by AI and IoT documentation, delivers precise
+                    water management for agriculture. Through sensor data and a user-friendly mobile
+                    app, clients can remotely monitor and control irrigation, ensuring optimal plant
+                    health. This innovative solution offers convenience and efficiency while maximizing
+                    water conservation efforts</p>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form action="#" method="POST"> <!-- Replace "#" with your form action -->
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
+        <div class="contact">
+            <h2>Contact</h2>
+            <form action="path_to_backend_script" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
                 <button type="submit">Send Message</button>
             </form>
+            <div class="social-media">
+                <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/yourphonenumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <div class="acontainer">
+            <p>&copy; 2024 Muhammad Ahsan. All rights reserved.</p>
         </div>
     </footer>
 
