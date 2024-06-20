@@ -290,7 +290,48 @@ img{
     height: 500px;
     width: 400px;
 }
+/* Social Media Icons */
 .social-media {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #444;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+/* Facebook Icon */
+.social-media a[href*="facebook.com"] i {
+    color: #3b5998; /* Facebook blue */
+}
+
+/* Instagram Icon */
+.social-media a[href*="instagram.com"] i {
+    color: #e4405f; /* Instagram gradient */
+}
+
+/* WhatsApp Icon */
+.social-media a[href*="wa.me"] i {
+    color: #25d366; /* WhatsApp green */
+}
+
+/* Email Icon */
+.social-media a[href*="mailto"] i {
+    color: #ea4335; /* Gmail red */
+}
+#response-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }

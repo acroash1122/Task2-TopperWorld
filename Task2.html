@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
     <link rel="stylesheet" href="Task2.css"> 
+    
 </head>
 <body>
+    <script src="task2.js"></script>
     <header>
         <div class="acontainer">
-            <h1>Your Name</h1>
+            <h1>Muhammad Ahsan</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -20,7 +22,29 @@
             </nav>
         </div>
     </header>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+        
+        smoothScrollLinks.forEach(smoothScrollLink => {
+            smoothScrollLink.addEventListener("click", function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    const offsetTop = targetElement.offsetTop;
+                    
+                    window.scroll({
+                        top: offsetTop,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    });
+    </script>
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
@@ -52,7 +76,7 @@
             </div>
             <div class="project">
                 <a href="https://github.com/acroash1122/Smart-Watering-System-.git" target="_blank">
-                    <img src="WhatsApp Image 2024-06-20 at 3.15.48 PM.jpeg" alt="Another Project">
+                    <img src="WhatsApp Image 2024-06-20 at 3.15.48 PM.jpeg" alt="smart watering system ">
                 </a>
                 <h3>Smart Watering System</h3>
                 <p>The smart irrigation system, powered by AI and IoT documentation, delivers precise
@@ -67,7 +91,7 @@
     <section id="contact">
         <div class="contact">
             <h2>Contact</h2>
-            <form action="path_to_backend_script" method="post">
+            <form id="contactForm" method="post">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -82,13 +106,16 @@
                 </div>
                 <button type="submit">Send Message</button>
             </form>
-            <div class="social-media">
-                <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/yourphonenumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
-            </div>
+            <div id="formOutput"></div> <!-- Container for displaying form submission message -->
         </div>
+
+            <div class="social-media">
+                <a href="https://www.instagram.com/ahsanshahid22" target="_blank"> Instagram <i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/03100043300" target="_blank"> Watsapp <i class="fab fa-whatsapp"></i></a>
+                <a href="muhammadahsanshahid005@gmail.com"> Email <i class="fas fa-envelope"></i></a>
+                <a href="https://www.facebook.com/AhsanShahid" target="_blank"> Facebook <i class="fab fa-facebook"></i></a>
+            </div>
+        
     </section>
 
     <footer>
@@ -97,7 +124,7 @@
         </div>
     </footer>
 
-    <!-- Optional: Add JavaScript for interactive elements -->
-    <script src="scripts.js"></script>
+    
+   
 </body>
 </html>
